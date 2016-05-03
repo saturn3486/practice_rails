@@ -45,3 +45,33 @@ Bundlerで使用するパッケージをまとめるには、Gemfileにgemパッ
 
 このBundler自体はgemパッケージとして提供されているので、gemコマンドでinstallを行います。
 
+良く使われるBundlerコマンド  
+
+|コマンド名      |内容     |
+|:-----        |:-----  |
+|bundle install|Gemfileに記載されたgemパッケージをインストールする|
+|bundle update|インストール済みのgemパッケージを更新する|
+|bundle list|インストール済みのgemパッケージの一覧を表示する|
+|bundle init|Gemfileを生成する|
+|bundle exec|コマンド名Bundlerでインストールされているgemパッケージを使用してコマンドを実行する|
+
+## Railsの思想
+-------
+
+#### CoC(Convention over Configuration)
+
+設定より規約。
+
+- データベースのテーブル名はモデル名の複数形にする。（モデル名がEmployeeの場合、テーブル名はemployeesとなる。）
+- /emplueesというURLは社員の一覧を表す
+- 社員ID:1の社員情報を表すURL/employees/1である
+
+#### DRY(Don't Repeat Yourself)
+
+
+
+#### REST(Representational State Transfer)
+
+
+#### 自動テスト
+
