@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tichets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Seat</th>
+      <th>Address</th>
+      <th>Price paid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tichets.each do |tichet| %>
+      <tr>
+        <td><%= tichet.name %></td>
+        <td><%= tichet.seat_id %></td>
+        <td><%= tichet.address %></td>
+        <td><%= tichet.price_paid %></td>
+        <td><%= link_to 'Show', tichet %></td>
+        <td><%= link_to 'Edit', edit_tichet_path(tichet) %></td>
+        <td><%= link_to 'Destroy', tichet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tichet', new_tichet_path %>

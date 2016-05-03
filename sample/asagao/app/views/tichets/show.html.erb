@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tichet.name %>
+</p>
+
+<p>
+  <strong>Seat:</strong>
+  <%= @tichet.seat_id %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @tichet.address %>
+</p>
+
+<p>
+  <strong>Price paid:</strong>
+  <%= @tichet.price_paid %>
+</p>
+
+<%= link_to 'Edit', edit_tichet_path(@tichet) %> |
+<%= link_to 'Back', tichets_path %>
